@@ -10,6 +10,13 @@ const config: GatsbyConfig = {
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+    {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
