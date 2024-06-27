@@ -16,6 +16,16 @@ const config: GatsbyConfig = {
         path: `${__dirname}/blog`,
       }
     },
+
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: [`foo-bar.js`],
+      }
+    },
+
+    "gatsby-plugin-mdx",
     {
     resolve: 'gatsby-source-filesystem',
     options: {
