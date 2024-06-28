@@ -9,6 +9,9 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
