@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a[href] {
     transition: all 0.1s linear 0s;
+    text-decoration: none;
   }
 `;
 

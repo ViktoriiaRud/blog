@@ -42,12 +42,12 @@ const NavigateTopicCard = () => {
                               <StyledContentFront>
                                 <StyledWrapperIconTitle>
                                   <StyledContentText>
-                                   <h2>{card.title}</h2>
+                                    <h2>{card.title}</h2>
+                                    <h3>{card.description}</h3>
                                   </StyledContentText>
                                   <StyledWrapperIconFront>
                                   </StyledWrapperIconFront>
                                 </StyledWrapperIconTitle>
-                                <h3>{card.description}</h3>
                               </StyledContentFront>
                             </CardFace>
                         )}

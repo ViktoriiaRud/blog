@@ -29,9 +29,20 @@ export const CardFace = styled.div``;
 
 export const StyledContentFront = styled.div`
     padding: 35px 30px 60px 30px;
-    background-color: lightgray;
+    background-color: cadetblue;
     max-width: 295px;
     height: 200px;
+    border-radius: 4px;
+    
+    h2 {
+        color: white;
+        font-size: 26px;
+    }
+    
+    h3 {
+        color: white;
+        font-size: 18px;
+    }
 `;
 
 export const StyledContentBack = styled.div`
@@ -42,14 +53,13 @@ export const StyledContentBack = styled.div`
 `;
 
 export const StyledContentText = styled.div`
-  max-width: 144px;
 `;
 
 export const StyledWrapperIconFront = styled.div``;
 
 export const StyledImgTopicCard = styled.div`
   max-width: 295px;
-  min-height: 260px;
+  min-height: 258px;
   width: 100%;
   height: 100%;
   position: relative;

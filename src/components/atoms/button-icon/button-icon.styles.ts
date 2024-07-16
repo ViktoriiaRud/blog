@@ -18,6 +18,7 @@ export const StyledButtonIcon = styled.a<ButtonPropsType>`
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: ease;
+  text-decoration: none;
 
 
   ${({ variant }) => {
