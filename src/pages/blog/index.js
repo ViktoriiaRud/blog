@@ -67,11 +67,11 @@ const BlogPage = ({ data }) => {
                                                                 {blogPost && (
                                                                     <article key={blogPost.id}>
 
-                                                                            <Link to={`/blog/${blogPost.frontmatter.slug}`}>
-                                                                                <ButtonIcon variant="black" size="sm" to={`/blog/${blogPost.frontmatter.slug}`}>
-                                                                                    {card.titleButton}
-                                                                                </ButtonIcon>
-                                                                            </Link>
+                                                                        <Link to={`/blog/${blogPost.frontmatter.slug}`}>
+                                                                            <ButtonIcon variant="black" size="sm" to={`/blog/${blogPost.frontmatter.slug}`}>
+                                                                                {card.titleButton}
+                                                                            </ButtonIcon>
+                                                                        </Link>
                                                                     </article>
                                                                 )}
                                                             </StyledWrapperButtonIcon>

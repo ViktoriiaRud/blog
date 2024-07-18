@@ -6,4 +6,3 @@ export type CarouselPictureType = {
         altText: string;
     } [];
 };
-

@@ -1,38 +1,10 @@
 import styled from 'styled-components';
-import FbfImage from "../../atoms/fbf-image";
-import Typography from '../../atoms/typography';
-
 import { breakpoint } from '../../../theme';
 
-
-import {
-  StyledSubTitleInnovation,
-  StyledTitleButtonInnovation,
-  StyledTitleInnovationBanner,
-  StyledWrapperTitleButtonInnovation,
-  TypographyInnovationDescription,
-  TypographyInnovationTitle,
-  WrapperBannerInnovation,
-} from '../banner-innovation/banner-innovation.styles';
-
-export const WrapperBannerCaseStudyImg = styled(WrapperBannerInnovation)``;
+export const WrapperBannerCaseStudyImg = styled.div``;
 
 export const StyledWrapperImgCaseStudyImg = styled.div``;
-
-// export const StyledImage = styled(FbfImage)`
-//   position: relative;
-//   margin: 0 auto;
-//   min-height: 1100px;
-//   z-index: -6;
-//   object-fit: cover;
-//
-//   ${breakpoint.xxl} {
-//     min-height: unset;
-//     max-height: 675px;
-//   }
-// `;
-
-export const StyledTitleButtonCaseStudyImg = styled(StyledTitleButtonInnovation)`
+export const StyledTitleButtonCaseStudyImg = styled.div`
   position: absolute;
   padding: 0 20px;
   left: 0;
@@ -61,9 +33,9 @@ export const StyledTitleButtonCaseStudyImg = styled(StyledTitleButtonInnovation)
   }
 `;
 
-export const StyledWrapperTitleButtonCaseStudy = styled(StyledWrapperTitleButtonInnovation)``;
+export const StyledWrapperTitleButtonCaseStudy = styled.div``;
 
-export const StyledTitleCaseStudyImgBanner = styled(StyledTitleInnovationBanner)`
+export const StyledTitleCaseStudyImgBanner = styled.div`
   &:after {
     background-color: ${({ theme }) => theme.colors.blue};
     left: 3%;
@@ -83,59 +55,4 @@ export const StyledTitleCaseStudyImgBanner = styled(StyledTitleInnovationBanner)
       left: -1%;
     }
   }
-`;
-
-export const TypographyCaseStudyImgTitle = styled(TypographyInnovationTitle)``;
-
-export const TypographyCaseStudyImgDescription = styled(TypographyInnovationDescription)`
-  padding: 0 30px;
-
-  ${breakpoint.sm} {
-    padding: 0 50px;
-  }
-
-  ${breakpoint.md} {
-    padding: 0;
-  }
-`;
-
-// export const StyledSubTitleCaseStudyImg = styled(StyledSubTitleInnovation)``;
-
-
-export const StyledTypography = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.blue};
-  }
-`;
-
-export const VerticalStyledWrapper = styled.div`
-  ${breakpoint.md} {
-    max-width: 220px;
-    width: 100%;
-    position: absolute;
-    left: 86%;
-    top: 207px;
-    z-index: 22;
-    transform: rotate(90deg);
-  }
-
-  ${breakpoint.lg} {
-    left: 120%;
-  }
-
-  ${breakpoint.xl} {
-    left: 158%;
-  }
-
-  ${breakpoint.xxl} {
-    left: 180%;
-  }
-`;
-
-export const WrapperStyledLinkCaseStudyImg = styled(WrapperStyledLink)``;
-
-export const StyledWrapperButtonWidthTwo = styled.div`
-  margin: 35px 0 7px -14px;
 `;
