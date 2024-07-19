@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledButtonIcon } from './button-icon.styles';
+import { StyledButton } from './button.styles';
 
 export type ButtonPropsType = {
   href?: string;
@@ -17,16 +17,16 @@ export type ButtonPropsType = {
     event: React.MouseEvent<HTMLButtonElement>
   ) => void | React.MouseEventHandler<HTMLButtonElement>;
 } & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
-const ButtonIcon: React.FC<ButtonPropsType> = ({
+const Button: React.FC<ButtonPropsType> = ({
   variant = 'black',
   size = 'sm',
   onClick,
   href,
   children,
 }) => (
-  <StyledButtonIcon variant={variant} size={size} as={onClick ? 'button' : 'a'} href={href}>
+  <StyledButton variant={variant} size={size} as={onClick ? 'button' : 'a'} href={href}>
     {children}
-  </StyledButtonIcon>
+  </StyledButton>
 );
 
-export default ButtonIcon;
+export default Button;

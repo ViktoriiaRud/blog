@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { ButtonPropsType } from './button-icon';
+import { ButtonPropsType } from './button';
 
-export const StyledButtonIcon = styled.a<ButtonPropsType>`
+export const StyledButton = styled.a<ButtonPropsType>`
   display: block;
   width: 100%;
   border: none;
@@ -71,6 +71,6 @@ export const StyledButtonIcon = styled.a<ButtonPropsType>`
   }}
 `;
 
-export const StyledWrapperButtonIcon = styled.div`
+export const StyledWrapperButton = styled.div`
   margin: 0 auto;
 `;

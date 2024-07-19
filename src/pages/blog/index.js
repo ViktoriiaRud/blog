@@ -1,8 +1,15 @@
 import * as React from 'react';
 import Layout from "../../components/layout";
 import { Link, graphql } from "gatsby";
+import Container from "../../components/atoms/container";
+import NavigateTopic from "../../components/molecules/navigate-topic";
+import Seo from "../../components/seo";
+import { useState } from "react";
+import Button from "../../components/atoms/button";
+
 import { dataNavigateTopic, dataNavigateTopicCard } from "../../data/data-third-page-see-all-case-studiess";
-import { StyledWrapperButtonIcon } from "../../components/atoms/button-icon/button-icon.styles";
+import {StyledWrapperButton} from "../../components/atoms/button/button.styles";
+
 import {
     Card,
     CardContainerTopicCard,
@@ -17,11 +24,6 @@ import {
     StyledWrapperTopicCard,
     WrapperNavigateTopicCard
 } from "../../components/organisms/navigate-topic-card/navigate-topic-card.styles";
-import Container from "../../components/atoms/container";
-import ButtonIcon from "../../components/atoms/button-icon";
-import NavigateTopic from "../../components/molecules/navigate-topic";
-import Seo from "../../components/seo";
-import { useState } from "react";
 
 const BlogPage = ({ data }) => {
     const [isShown, setIsShown] = useState(null);
@@ -63,18 +65,17 @@ const BlogPage = ({ data }) => {
                                                             <img src={card.srcImage} alt={card.altText} />
                                                         </StyledImgTopicCard>
                                                         <StyledButtonWidth>
-                                                            <StyledWrapperButtonIcon>
+                                                            <StyledWrapperButton>
                                                                 {blogPost && (
                                                                     <article key={blogPost.id}>
-
                                                                         <Link to={`/blog/${blogPost.frontmatter.slug}`}>
-                                                                            <ButtonIcon variant="black" size="sm" to={`/blog/${blogPost.frontmatter.slug}`}>
+                                                                            <Button variant="black" size="sm" to={`/blog/${blogPost.frontmatter.slug}`}>
                                                                                 {card.titleButton}
-                                                                            </ButtonIcon>
+                                                                            </Button>
                                                                         </Link>
                                                                     </article>
                                                                 )}
-                                                            </StyledWrapperButtonIcon>
+                                                            </StyledWrapperButton>
                                                         </StyledButtonWidth>
                                                     </StyledContentBack>
                                                 </CardFace>

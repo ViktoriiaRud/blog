@@ -18,8 +18,8 @@ export const StyledWrapperButtonNavigate = styled.div`
 export const StyledWrapperButton = styled.div`
   margin: 29px 0 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 70px;
 `;
