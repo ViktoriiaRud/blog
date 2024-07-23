@@ -9,6 +9,7 @@ import {
     navLinkText,
     siteTitle,
 } from './layout.module.css'
+import BannerPost from "./organisms/banner-post";
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
