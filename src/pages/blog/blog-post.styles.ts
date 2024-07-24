@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const WrapperBanner = styled.div`
-
-`;
+export const WrapperBanner = styled.div``;
 
 export const StyledWrapperTitleButton = styled.div``;
 
@@ -36,5 +34,3 @@ export const StyledWrapperTitle = styled.div`
         text-align: center;
     }
 `;
-
-

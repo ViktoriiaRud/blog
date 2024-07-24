@@ -5,8 +5,7 @@ import Seo from "../components/seo.js";
 const AboutPage = () => {
     return (
         <Layout pageTitle="About Me">
-            <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-            <img src={"https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=600"} alt={'sea'}/>
+            <img src={"https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"} alt={'sea'}/>
         </Layout>
     )
 }

@@ -3,7 +3,6 @@ import {graphql} from 'gatsby';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {getImage, GatsbyImage} from "gatsby-plugin-image";
-
 import Container from "../../components/atoms/container";
 import {StyledTitle, StyledWrapperTitleButton, WrapperBanner, StyledWrapperTitle} from "./blog-post.styles";
 
@@ -27,8 +26,6 @@ const BlogPost = ({data, children}) => {
                         </StyledWrapperTitleButton>
                     </Container>
                 </WrapperBanner>
-
-
                 {image && <GatsbyImage image={image} alt={mdx.frontmatter.hero_image_alt}/>}
                 {children}
             </Layout>
